@@ -213,7 +213,7 @@ let ex3 = (name, obj) =>fp.first(safeProp(name)(obj)._value);
 ### 练习4:
 实现 Maybe 重写 ex4，不要有 if 语句  
 
-```
+```javascript
 const fp = require('lodash/fp)
 const {Maybe, Contaiber} = require('./supports)
 
@@ -223,7 +223,7 @@ let ex4 = function (n) {
 ```
 答：
 
-```
+```javascript
 let ex4 = n=> Maybe.of(n).map(parseInt)._value;
 console.log(ex4(2))
 ```
